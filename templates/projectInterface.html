@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Spotify Playlist Generator</title>
+    <link rel="stylesheet" href="static/css/style.css"/>
+</head>
+<body>
+    <h1>Spotify Playlist Generator</h1>
+    <form action="/select_genre" method="post">
+        <label for="genre">Choose a genre:</label>
+        <select name="genre" id="genre">
+            <option value="Corrido">Corrido</option>
+            <option value="Boom Bap">Boom Bap</option>
+            <option value="Rock">Rock</option>
+            <option value="Rap">Rap</option>
+            <option value="Indie Rock">Indie Rock</option>
+            <option value="EDM">EDM</option>
+        </select>
+        <input type="submit" value="Generate Playlist"/>
+    </form>
+</body>
+</html>

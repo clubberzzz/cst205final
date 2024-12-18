@@ -1,0 +1,99 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Use a modern sans-serif font similar to Spotify’s aesthetic */
+body {
+    background-image: url('/static/spotifybackground.gif'); /* Adjust path as needed */
+    background-color: #282626; /* Fallback color in case image fails to load */
+    background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+    background-size: cover; /* Makes the image cover the entire viewport */
+    background-position: center; /* Centers the image */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styling */
+h1 {
+    margin-top: 200px;
+    margin-bottom: 70px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #1DB954; /* Spotify green */
+}
+
+/* Form container */
+form {
+    background: #181818;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    max-width: 300px;
+    width: 100%;
+}
+
+/* Labels and text elements */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/* Select element */
+select {
+    width: 100%;
+    padding: 10px;
+    background-color: #282828;
+    border: 1px solid #3e3e3e;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 1rem;
+    -webkit-appearance: none; /* For Safari/Chrome */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none; /* Default */
+    background-repeat: repeat;
+    background-position: right center;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #3e3e3e;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #1DB954;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1ED760;
+}
+
+/* Add some spacing at the bottom so page feels balanced */
+body::after {
+    content: "";
+    display: block;
+    margin-bottom: 50px;
+}
