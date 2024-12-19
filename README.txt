@@ -8,11 +8,14 @@ December 12th 2024
 
 How to run:
 
-Download Appropriate files
+Download/clone appropriate files here: https://github.com/clubberzzz/cst205final
+
+Edit FINALPROJECT.py yourself add your Spotify client tokens on lines 25 and 26. This is needed for the program to work your spotify account.
 
 Enter Windows Powershell
 
 Create a virtual environment
+
 
 Install:
 -Flask (pip install flask)
